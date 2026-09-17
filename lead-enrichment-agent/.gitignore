@@ -1,0 +1,16 @@
+# Secrets — never commit your API key
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Crawler disk cache (regenerated on each run)
+data/cache/
+
+# Generated output (regenerated on each run)
+data/output.json
+data/output.csv

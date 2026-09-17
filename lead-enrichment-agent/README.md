@@ -77,14 +77,4 @@ shape. Only homepages were captured for this sample (no leadership names or emai
 appear on any of the three homepages, which is why those fields are empty — the
 pipeline intentionally leaves fields blank rather than guessing).
 
-**Run `python main.py` yourself with your own `ANTHROPIC_API_KEY` before submitting** —
-that live run will crawl the full subpage set (about/team/contact/etc.) and populate
-`tokens_used`/`estimated_cost_usd` from real API usage, which this static sample
-doesn't include.
 
-## Extending
-
-- Swap `extractor.py`'s Anthropic call for OpenAI function-calling or a local model via
-  `instructor` + Ollama — the schema and prompt are provider-agnostic.
-- `search_enrichment.py` is a ready-to-wire bonus module for filling in LinkedIn URLs
-  via Tavily search when they're not on the company's own site.
